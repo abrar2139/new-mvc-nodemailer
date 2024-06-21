@@ -3,12 +3,12 @@ const dotenv = require ('dotenv');
 dotenv.config();
 const Passkey = process.env.SMTP_PASSWORD;
 const Id = process.env.SMTP_EMAIL
-const False = process.env.SMTP_SECURITY
+const Gmail = process.env.SMTP_SERVICE
 const  smtpPort = process.env.SMTP_PORT
 
 const Transporter = nodemailer.createTransport({
-    service: "gmail",
-    secure:False,
+    service: Gmail,
+    secure:false,
     port:smtpPort,
     auth:{
          user: Id,
