@@ -56,17 +56,13 @@ Transporter.sendMail(mailOptions, (error)=>{
     }
    });
 
-
-
-
-
    const mailOptionsCustomer = {
     from : "AB-DEVELOPERS",
     to : email,
     subject : "Thank You for contact us",
     html : `
           <p><b style="color: blue";>AB-DEVELOPERS</b>: This email is send by us.</p>
-          <p>You send us this message:<h4 style="color: #C3F8AE";> ${message}</h4> </p>
+          <p>You send us this message:<span style="color: #C3F8AE";> ${message}</span> </p>
           <p style="color: green";>Thank You for contacting us. We will get back to you shortly.</p>
           <img src="https://cdn.create.vista.com/api/media/medium/448491818/stock-photo-rendering-cute-robot-artificial-intelligence-robot-cartoon-character-greeting?token=" alt="Robot" width="200px" height="200px">
     `,
