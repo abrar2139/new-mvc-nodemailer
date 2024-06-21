@@ -63,7 +63,7 @@ Transporter.sendMail(mailOptions, (error)=>{
     subject : "Thank You for contact us",
     html : `
           <p><b style="color: blue";>AB-DEVELOPERS</b>: <span style="color:#0066ff";>This email is send by us.</span></p>
-          <p><span style="color:#0066ff";>You send us this message:</span><span style="color: #C3F8AE";> ${message}</span> </p>
+          <p><span style="color:#0066ff";>You send us this message:</span><span style="color: #00ff00";> ${message}</span> </p>
           <p style="color: green";>Thank You for contacting us. We will get back to you shortly.</p>
           <img src="https://cdn.create.vista.com/api/media/medium/448491818/stock-photo-rendering-cute-robot-artificial-intelligence-robot-cartoon-character-greeting?token=" alt="Robot" width="200px" height="200px">
     `,
